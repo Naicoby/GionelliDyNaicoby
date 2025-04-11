@@ -1,0 +1,248 @@
+/* GLOBAL */
+body {
+  background-color: #0e0101;
+  color: #9aff02;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Texto dorado */
+.text-gold {
+  color: #D4AF37;
+}
+
+/* Texto blanco */
+.text-white {
+  color: #ffffff;
+}
+
+/* NAVBAR */
+.logo-container .logo {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  color: #D4AF37;
+  text-shadow: 1px 1px 2px #000;
+}
+
+/* CARRUSEL */
+#carrusel {
+  margin-top: 80px; /* Espacio desde el navbar */
+  padding-bottom: 40px; /* Espacio debajo del carrusel */
+}
+
+#carrusel img {
+  height: 400px; /* Menor altura general */
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.carousel-item img {
+  width: 100%; /* Para que se adapte bien a distintos tamaños */
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* Carrusel: fondo semitransparente + efecto de profundidad */
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 15px;
+  text-shadow:
+    1px 1px 2px #000,
+    2px 2px 5px rgba(0, 0, 0, 0.6);
+  box-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.5);
+  max-width: 90%;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+
+/* BIENVENIDA */
+.section-bienvenida {
+  background-color: #0d0d0d;
+  padding: 50px 0;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+}
+
+.section-bienvenida .container {
+  animation: fadeInUp 1.5s ease-out;
+}
+
+/* CATÁLOGO */
+#catalogo {
+  background-color: #0d0d0d;
+  padding: 50px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+}
+
+#catalogo .card {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border: 1px solid #D4AF37;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#catalogo .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.5);
+}
+
+#catalogo .card-img-top {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 250px;
+  object-fit: cover;
+}
+
+#catalogo .card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #D4AF37;
+  text-shadow: 1px 1px 2px #000;
+}
+
+#catalogo .card-text del {
+  color: #ff4c4c;
+  margin-left: 10px;
+}
+
+/* UBICACIÓN */
+#Ubicacion {
+  background-color: #0d0d0d;
+  color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+  margin: 40px auto;
+  max-width: 800px;
+  padding: 20px;
+}
+
+#Ubicacion h2,
+#Ubicacion h3 {
+  text-align: center;
+  color: #D4AF37;
+  text-shadow: 1px 1px 3px #000;
+}
+
+#Ubicacion p {
+  font-size: 1.1em;
+  margin: 10px 20px;
+  color: #ffffff;
+}
+
+#Ubicacion a {
+  color: #D4AF37;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#Ubicacion table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border: 1px solid #D4AF37;
+}
+
+#Ubicacion th,
+#Ubicacion td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #D4AF37;
+}
+
+#Ubicacion th {
+  background-color: #262626;
+  font-weight: bold;
+  color: #D4AF37;
+}
+
+#Ubicacion td[colspan="2"] {
+  color: #ffffff;
+  background-color: #262626;
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  background-color: #111;
+  padding: 20px;
+  color: #ffffff;
+}
+
+footer .social-icons a {
+  color: #D4AF37;
+  margin: 0 10px;
+  font-size: 1.2rem;
+}
+
+/* BOTÓN WHATSAPP */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+/* ANIMACIÓN */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.text-gold {
+  color: #d4af37;
+}
+
+.bg-black {
+  background-color: #000000;
+}
+
+.btn-outline-gold {
+  border: 1px solid #d4af37;
+  color: #d4af37;
+  background-color: transparent;
+}
+
+.btn-outline-gold:hover {
+  background-color: #d4af37;
+  color: #000;
+}
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.banner .container {
+  position: relative;
+  z-index: 1;
+}
